@@ -8,7 +8,7 @@ class AppTheme{
   static final darkThemeMode=ThemeData.dark(useMaterial3: true).copyWith(
     scaffoldBackgroundColor: AppColor.backgroundColor,
     appBarTheme: const AppBarTheme(backgroundColor: AppColor.appBarColor),
-    progressIndicatorTheme: ProgressIndicatorThemeData(color: AppColor.appColor)
+    progressIndicatorTheme: const ProgressIndicatorThemeData(color: AppColor.appColor)
   );
 
 
