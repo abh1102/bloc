@@ -1,4 +1,6 @@
+import 'package:bloc_project_todo/core/routes/route_name.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../core/utils/app_image_url.dart';
 class SplashView extends StatefulWidget {
@@ -9,7 +11,15 @@ class SplashView extends StatefulWidget {
 }
 
 class _SplashViewState extends State<SplashView> {
+  void initState(){
+    WidgetsBinding.instance.addPostFrameCallback((_){
+      context.goNamed(RouteNames.login);
+    });
+   super.initState();
+  }
+  
   @override
+  
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(

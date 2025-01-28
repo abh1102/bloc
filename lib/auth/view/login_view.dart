@@ -86,7 +86,10 @@ class _LoginViewState extends State<LoginView> {
                   ),),
                   SizedBox(height: 10),
                    CustomElevatedButton(
-                     buttonText: AppString.login,onPressed: (){},
+                     buttonText: AppString.login,onPressed: (){
+                       if(_loginFormKey.currentState!.validate()){}
+
+                   },
 
                    ) ,
                   SizedBox(height: 10,),
